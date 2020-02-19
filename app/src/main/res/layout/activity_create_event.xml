@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    tools:context=".CreateEvent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:titleTextColor="@color/white"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:onClick="goToCityList"
+            />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createevent"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="casual"
+            android:textColor="@color/white"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        >
+
+    </ImageView>
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/entername"
+        android:fontFamily="sans-serif-thin"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edDate"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enterdate"
+        android:inputType="date"
+        android:fontFamily="sans-serif-thin"
+        android:focusableInTouchMode="false"
+        />
+
+    <EditText
+        android:id="@+id/edTime"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/entertime"
+        android:inputType="time"
+        android:fontFamily="sans-serif-thin"
+
+        />
+
+    <EditText
+        android:id="@+id/edLocation"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/enterlocation"
+        android:fontFamily="sans-serif-thin"
+        />
+
+    <EditText
+        android:id="@+id/edType"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/entertype"
+        android:fontFamily="sans-serif-thin"
+
+        />
+
+    <Button
+        android:id="@+id/btnRegistration"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/createevent"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-thin"
+        android:onClick="SavaEvent"
+        />
+
+
+</RelativeLayout>

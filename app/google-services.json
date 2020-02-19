@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "892162955979",
+    "firebase_url": "https://visitcroatia.firebaseio.com",
+    "project_id": "visitcroatia",
+    "storage_bucket": "visitcroatia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892162955979:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "892162955979-p5gkb1o9bcq8n9h6n39pmrcents6pcau.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "05d685f45280df032b72b1ae1e774210f7b8b91c"
+          }
+        },
+        {
+          "client_id": "892162955979-oboplfsn4i6tvc49m9tfili2bqaljkun.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgq12hLXP81uUDjF7raBbOsSilQZ4Qtxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "892162955979-oboplfsn4i6tvc49m9tfili2bqaljkun.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

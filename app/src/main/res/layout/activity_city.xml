@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".City">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            android:onClick="goToCityList"
+            />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:fontFamily="casual"
+            android:textColor="@color/white"
+            />
+
+    </androidx.appcompat.widget.Toolbar>
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-171dp"
+        tools:ignore="UselessParent"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/ivCity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/zagreb" />
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnAllupcoming"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/framelayout"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"
+        android:text="@string/allupcoming"
+        android:textSize="18sp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginTop="-165dp"
+        android:onClick="goToEventList"
+        />
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        android:layout_below="@+id/btnAllupcoming"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/choosedate"
+        />
+    <Button
+        android:id="@+id/btnSeacrhDate"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/date"
+        android:background="@drawable/mybutton"
+        android:textColor="@color/white"
+        android:text="@string/searchdate"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-thin"
+        android:layout_marginBottom="20dp"
+        android:onClick="goToEventListSearch"
+        />
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_below="@+id/btnSeacrhDate"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+</RelativeLayout>

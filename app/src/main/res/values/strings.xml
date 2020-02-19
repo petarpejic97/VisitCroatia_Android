@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Visit Croatia</string>
+    //home
+    <string name="title">Visit Croatia</string>
+    <string name="drag">Drag screen to continue</string>
+
+    //login
+    <string name="enterEmail">Enter your email</string>
+    <string name="enterPassword">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="cont">Continue without login</string>
+    <string name="register">You dont have account? Click here</string>
+
+    //registration
+    <string name="enterName">Enter your name</string>
+    <string name="enterphonenumber">Enter your phone number</string>
+    <string name="confirmpassword">Confirm password</string>
+    <string name="registration">Registration</string>
+
+    //citylist
+    <string name="cities">Cities</string>
+    <string-array name="cities">
+        <item>Zagreb</item>
+        <item>Split</item>
+        <item>Vinkovci</item>
+        <item>Osijek</item>
+        <item>Rijeka</item>
+        <item>Zadar</item>
+        <item>Slavonski Brod</item>
+        <item>Pula</item>
+        <item>Karlovac</item>
+        <item>Sisak</item>
+        <item>Dubrovnik</item>
+        <item>Varaždin</item>
+        <item>Šibenik</item>
+        <item>Velika Gorica</item>
+        <item>Vukovar</item>
+        <item>Bjelovar</item>
+        <item>Koprivnica</item>
+        <item>Đakovo</item>
+        <item>Kaštela</item>
+        <item>Sesvete</item>
+    </string-array>
+
+    //city
+    <string name="allupcoming">All upcoming</string>
+    <string name="searchdate">Search date</string>
+    <string name="choosedate">Choose date</string>
+    <string name="map_key" translatable="false">AIzaSyDd4D3a8-H3UVyq9fRoaYi8rXprURFtiyI</string>
+
+    //Create event
+    <string name="createevent">Create event</string>
+    <string name="entername">Enter event name</string>
+    <string name="enterdate">Enter date</string>
+    <string name="entertime">Enter time</string>
+    <string name="enterlocation">Enter location</string>
+    <string name="entertype">Enter type</string>
+</resources>
